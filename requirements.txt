@@ -1,0 +1,11 @@
+gradio
+torch
+transformers
+einops
+accelerate
+langchain
+bitsandbytes
+chromadb
+langchain-community
+protobuf==3.20.*
+sentencepiece
