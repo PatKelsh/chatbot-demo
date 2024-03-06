@@ -3,9 +3,9 @@ import torch
 from transformers import AutoTokenizer, StoppingCriteria, StoppingCriteriaList, TextIteratorStreamer, AutoModelForCausalLM
 from threading import Thread
 
-model = AutoModelForCausalLM.from_pretrained("models/togethercomputer_RedPajama-INCITE-Chat-3B-v1", torch_dtype=torch.float16)
+model = AutoModelForCausalLM.from_pretrained("togethercomputer_RedPajama-INCITE-Chat-3B-v1", torch_dtype=torch.float16)
 # list of the tokens to be used by the model
-tokenizer = AutoTokenizer.from_pretrained("models/togethercomputer_RedPajama-INCITE-Chat-3B-v1")
+tokenizer = AutoTokenizer.from_pretrained("togethercomputer_RedPajama-INCITE-Chat-3B-v1")
 # sets the model to use the GPU  for faster processing
 model = model.to('cuda:0')
 
